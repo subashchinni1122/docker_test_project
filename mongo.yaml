@@ -4,6 +4,9 @@ services:
     image: 169406391388.dkr.ecr.eu-north-1.amazonaws.com/my-app:0.1
     ports:
       - 3000:3000
+    #environment:
+     # - MONGO_DB_USERNAME=admin
+     # - MONGO_DB_PWD=password
   mongodb:
     image: mongo
     ports:
